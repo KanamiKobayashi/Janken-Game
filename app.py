@@ -92,11 +92,11 @@ def upload_file():
                                     error_message=error_message)
 
 #ここで英語バージョンを入力認識させている
-@app.route('/enversion', methods=["GET","POST"])
+@app.route('/en_index', methods=["GET","POST"])
 #変えたところ↓
 def show_en():
     if request.method == "GET":
-        return render_template("enversion.html")
+        return render_template("en_index.html")
 
     if request.method == "POST":
 
@@ -154,8 +154,7 @@ def show_en():
                 elif myhand == 2:
                     result='Draw'
                     result_img="./image/aiko.gif"
-            #変えたところ↓
-            return render_template("enversion.html", 
+            return render_template("en_index.html", 
                                     result=result,
                                     result_img=result_img,
                                     myhand_s=myhand_s, 
@@ -164,8 +163,7 @@ def show_en():
                                     yourhand_pic=yourhand_pic)
         else:
             error_message="Select Rock, Scissors or Paper!"
-            #変えたところ↓
-            return render_template("enversion.html", 
+            return render_template("en_index.html", 
                                     error_message=error_message)
 
 if __name__ == '__main__':
