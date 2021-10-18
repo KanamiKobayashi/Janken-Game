@@ -1,7 +1,8 @@
 # Janken-game
 It's a simple Rock, Paper, Scissors game.
 
-It's in Japanese on the first screen and when you click UK flag, you can also play game in English.
+You can change languages with clicking on the right top flag. 
 
 Let's play!
+
 https://jankengamewithcomputer.herokuapp.com/en_index
